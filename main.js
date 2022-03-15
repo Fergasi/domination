@@ -78,14 +78,15 @@ resizeImage(newImage)
 
 //5. Write a function that takes in an element and gives it the class `invisible`.
 
-function makeClassInvisible(visibleElement){
-    let invisibleElement = document.querySelector(visibleElement)
-    invisibleElement.className = `invisible`
+function makeClassInvisible(element){
+    element.className = `invisible`
 }
 
 //6. Now query an element on the page and pass it into that function. You should see it disappear! (feel free to check the CSS file to see how this class works.)
 
-makeClassInvisible('form')
+let formElement = document.querySelector('form')
+
+makeClassInvisible(formElement)
 
 // ### Part Three - Creating DOM Elements:
 //**These functions will `return` new DOM elements.**
